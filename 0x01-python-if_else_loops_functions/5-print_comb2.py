@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 i = 0
-while i <= 9:
-    j = 0
-    while j <= 9:
-        if j == 9 and i == 9:
-            print("{}{}".format(i, j))
-        else:
-            print("{}{}".format(i, j), end=", ")
-        j = j + 1
+while i <= 99:
+    if i == 99:
+        print("{:02d}".format(i))
+    else:
+        print("{:02d}".format(i), end=", ")
     i += 1
