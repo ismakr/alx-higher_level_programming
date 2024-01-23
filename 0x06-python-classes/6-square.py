@@ -41,16 +41,16 @@ class Square:
             print("")
             return
         t = 0
+        i = 0
         while t < self.__position[1]:
             print("")
             t += 1
-        i = 0
         while i < self.__size:
             k = 0
+            j = 0
             while k < self.__position[0]:
                 print(" ", end="")
                 k += 1
-            j = 0
             while j < self.__size:
                 print("#", end="")
                 j += 1
