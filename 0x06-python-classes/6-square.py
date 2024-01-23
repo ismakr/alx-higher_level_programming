@@ -40,6 +40,10 @@ class Square:
         if self.__size == 0:
             print("")
             return
+        t = 0
+        while t < self.__position[1]:
+            print("")
+            t += 1
         i = 0
         while i < self.__size:
             k = 0
