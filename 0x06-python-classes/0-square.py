@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    class Square:
-        pass
+"""an empty class Square that defines a square"""
+
+
+class Square:
+    """an empty class Square that defines a square"""
+    pass
