@@ -1,0 +1,30 @@
+import_function from module:
+    	>>> add_integer = __import__('0-add_integer').add_integer
+
+basic:
+    	>>> add_integer(1, 2)
+    	3
+
+negative:
+    	>>> add_integer(100, -2)
+    	98
+
+one number:
+    	>>> add_integer(2)
+    	100
+
+float_number
+    	>>> add_integer(100.3, -2)
+    	98
+
+string:
+    	>>> add_integer(4, "School")
+	Traceback (most recent call last):
+            ...
+        TypeError: b must be an integer
+
+arg_None:
+    	>>> add_integer(None)
+    	Traceback (most recent call last):
+            ...
+    	TypeError: a must be an integer
