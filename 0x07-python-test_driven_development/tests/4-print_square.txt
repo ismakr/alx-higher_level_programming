@@ -1,0 +1,21 @@
+import_function from module:
+	>>> print_square = __import__('4-print_square').print_square
+
+basic:
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+
+negative number:
+	>>> print_square(-1)
+	Traceback (most recent call last):
+	    ...
+	TypeError: size must be >= 0
+
+float number:
+	>>> print_square(4.1)
+        Traceback (most recent call last):
+            ...
+        TypeError: size must be an integer
