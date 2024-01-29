@@ -53,6 +53,8 @@ class Rectangle:
 
     def __str__(self):
         """prints the rec"""
+        if self.__width == 0 or self.__height == 0:
+            return ("")
         rec = []
         i = 0
         while i < self.__height:
