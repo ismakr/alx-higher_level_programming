@@ -55,6 +55,7 @@ class Rectangle:
         """prints the rec"""
         if self.__width == 0 or self.__height == 0:
             return ("")
+
         rec = []
         i = 0
         while i < self.__height:
@@ -62,6 +63,7 @@ class Rectangle:
             while j < self.__width:
                 rec.append("#")
                 j += 1
-            rec.append("\n")
+            if i != self.__height - 1:
+                rec.append("\n")
             i += 1
         return "".join(rec)
