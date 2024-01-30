@@ -5,6 +5,8 @@
 class Rectangle:
     """ class Rectangle that defines a rectangle"""
 
+    count = 0
+
     def __init__(self, width=0, height=0):
         """Instantiation:
 
@@ -75,6 +77,6 @@ class Rectangle:
 
     def __del__(self):
         """delete an instance"""
-        Rectangle.count -= 1
         del self
         print("Bye rectangle...")
+        Rectangle.count -= 1
