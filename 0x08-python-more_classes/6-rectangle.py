@@ -4,8 +4,7 @@
 
 class Rectangle:
     """ class Rectangle that defines a rectangle"""
-
-    count = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Instantiation:
@@ -16,7 +15,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        Rectangle.count += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -79,4 +78,4 @@ class Rectangle:
         """delete an instance"""
         del self
         print("Bye rectangle...")
-        Rectangle.count -= 1
+        Rectangle.number_of_instances -= 1
