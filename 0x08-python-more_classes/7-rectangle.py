@@ -64,12 +64,12 @@ class Rectangle:
         while i < self.__height:
             j = 0
             while j < self.__width:
-                rec.append(self.print_symbol)
+                rec.append(str(self.print_symbol))
                 j += 1
             if i != self.__height - 1:
                 rec.append("\n")
             i += 1
-        return "".join(rec)
+        return ("".join(rec))
 
     def __repr__(self):
         """return a string representation of the rectangle"""
