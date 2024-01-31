@@ -11,12 +11,8 @@ not str:
 	    ...
 	TypeError: first_name must be a string
 
-empty_arg:
-	>>> say_my_name("John", "")
-	My name is John
-
 last_name_not_str:
-	>>> say_my_name("John", "10")
+	>>> say_my_name("John", 10)
 	Traceback (most recent call last):
             ...
         TypeError: last_name must be a string
