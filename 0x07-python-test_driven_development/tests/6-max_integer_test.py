@@ -12,6 +12,15 @@ class TestMaxInteger(unittest.TestCase):
     def noarg_case(self):
         self.assertEqual(max_integer(), None)
 
+    def empty_list(self):
+        self.assertEqual(max_integer([]), None)
+
+    def float_test(self):
+        self.assertEqual(max_integer([1.1, 2.3, 5.4]), 5.4)
+
+    def string_test(self):
+        self.assertEqual(max_integer("test"), 't')
+
 
 if __name__ == '__main__':
     unittest.main()
