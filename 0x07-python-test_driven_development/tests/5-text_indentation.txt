@@ -1,0 +1,17 @@
+import_function from module:
+        >>> text_indentation.py = __import__('5-text_indentation.py').text_indentation.py
+
+basic:
+	>>> text_indentation("line1. line2: line3")
+	line1.
+
+	line2:
+
+	line3
+
+
+empty_str:
+	>>> text_indentation(10)
+	Traceback (most recent call last):
+	    ...
+	TypeError: text must be a string
