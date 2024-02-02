@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" module: text_inden"""
+""" module: text_indentation"""
 
 
 def text_indentation(text):
