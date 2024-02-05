@@ -1,0 +1,14 @@
+import_function from module:
+	>>> MyList = __import__('1-my_list').MyList
+
+test_unsorted:
+	>>> li = [5, 3, 4, 2, 1]
+	>>> my_list = MyList(li)
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+test_unsorted:
+        >>> li = [5, 3, 4, 2, 1]
+        >>> my_list = MyList(li)
+        >>> my_list.print_sorted()
+        [1, 2, 3, 4, 5]
