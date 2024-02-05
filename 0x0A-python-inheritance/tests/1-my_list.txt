@@ -25,3 +25,9 @@ not_int:
 	Traceback (most recent call last):
 	    ...
 	TypeError: '<' not supported between instances of 'str' and 'int'
+
+one_ele:
+	>>> li = [1]
+	>>> my_list = MyList(li)
+	>>> my_list.print_sorted()
+	[1]
