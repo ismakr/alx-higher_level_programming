@@ -69,7 +69,15 @@ class Rectangle(Base):
     def display(self):
         """prints in stdout the Rectangle"""
         i = 0
+        k = 0
+        while k < self.__y:
+            print("")
+            k += 1
         while i < self.height:
+            k = 0
+            while k < self.__x:
+                print(" ", end="")
+                k += 1
             j = 0
             while j < self.width:
                 print("#", end="")
