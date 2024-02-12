@@ -16,10 +16,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """get_width"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """set_width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -28,10 +30,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """get_height"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """set_height"""
         if not isinstance(value, int):
             raise TypeError(f"height must be an integer")
         if value <= 0:
@@ -40,10 +44,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """get_x"""
         return self.x
 
     @x.setter
     def x(self, value):
+        """set_x"""
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
@@ -52,10 +58,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """get_y"""
         return self.__width
 
     @y.setter
     def y(self, value):
+        """set_y"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
@@ -86,10 +94,12 @@ class Rectangle(Base):
             i += 1
 
     def __str__(self):
+        """return str"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
 {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
+        """update the rectangle"""
         if args:
             i = 0
             for ar in args:
