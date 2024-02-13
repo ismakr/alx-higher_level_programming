@@ -32,4 +32,4 @@ class Base:
                 fl.write("[]")
             else:
                 dic_li = [i.to_dictionary() for i in list_objs]
-                fl.write(Base.to_json_string(list_objs))
+                fl.write(Base.to_json_string(dic_li))
