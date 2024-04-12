@@ -9,7 +9,9 @@ if __name__ == '__main__':
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cur = db.cursor()
     # execute the query: name starting with N
-    cur.execute("SELECT * FROM states WHERE name REGEXP '^N[.]*'")
+    cur.execute("SELECT * FROM states WHERE name\
+            LIKE BINARY 'N%' ORDER BY id ASC")
+
     # fetch and print the result
     rows = cur.fetchall()
     for row in rows:
