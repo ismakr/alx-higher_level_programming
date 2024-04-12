@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-
-"""module that displays all values in the states table of hbtn_0e_0_usa
-where name matches the argument."""
-
+"""
+module that displays all values in the states table of hbtn_0e_0_usa
+where name matches the argument.
+"""
 import sys
 import MySQLdb
 
+# should not be executed when imported
 if __name__ == '__main__':
 
     # connect to the MySQL database located on localhost, using user,
