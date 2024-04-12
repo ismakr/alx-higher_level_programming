@@ -8,7 +8,8 @@ import MySQLdb
 
 if __name__ == '__main__':
 
-    # make a connection to the database
+    # connect to the MySQL database located on localhost, using user,
+    # connecting with password passwd, to database db
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cur = db.cursor()
     # Executing queries: name matches the argument.
