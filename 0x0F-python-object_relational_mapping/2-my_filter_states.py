@@ -15,7 +15,8 @@ if __name__ == '__main__':
     cur = db.cursor()
 
     # Executing queries: name matches the argument.
-    cur.execute("SELECT * FROM states WHERE name = '{}'".format(sys.argv[4]))
+    cur.execute("SELECT * FROM states WHERE name\
+            LIKE BINARY '{}'".format(sys.argv[4]))
 
     # fetch and print the result
     rows = cur.fetchall()
