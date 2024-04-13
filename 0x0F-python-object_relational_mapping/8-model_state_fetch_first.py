@@ -13,7 +13,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     qu = session.query(State.id, State.name).first()
-    if not qu:
+    if qu is None:
         print("")
     else:
         print(qu)
