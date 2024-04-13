@@ -12,4 +12,8 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    print(session.query(State.id, State.name).first())
+    qu = session.query(State.id, State.name).first()
+    if not qu:
+        print("")
+    else:
+        print(qu)
