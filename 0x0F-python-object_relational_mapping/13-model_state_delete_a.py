@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-changes the name of a State object from the database hbtn_0e_6_usa
+deletes all State objects with a name containing the letter a
+from the database hbtn_0e_6_usa
 """
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine, insert
@@ -12,8 +13,8 @@ if __name__ == '__main__':
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    qu = session.query(State)
+    qu = session.query(State).order_by(State.id)
     for state in qu:
         if "a" in state.name:
             session.delete(state)
-            session.commit()
+    session.commit()
