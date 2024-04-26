@@ -3,9 +3,7 @@
 import urllib.request
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
     page = response.read()
-    if "utf-8" in str(response.headers.get('Content-Type')):
-        check = "OK"
-    else:
-        check = ""
+    cont = str(page).replace('\'', '', 2)
+    cont = cont.replace('b', '')
     print("Body response:\n\t- type: {}\n\t- content: {}\
-\n\t- utf8 content: {}".format(type(response.read()), page, check))
+\n\t- utf8 content: {}".format(type(response.read()), page, cont))
