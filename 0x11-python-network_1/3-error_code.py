@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # sends a request to the URL display the body response
-# and manage urllib.error.HTTPError
 import urllib.request
 import sys
 try:
