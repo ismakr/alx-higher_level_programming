@@ -8,5 +8,5 @@ if __name__ == "__main__":
     r = requests.get(sys.argv[1])
     try:
         print(r.headers['X-Request-Id'])
-    except:
+    except():
         print("None")
