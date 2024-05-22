@@ -11,5 +11,5 @@ request(url, (error, response, body) => {
       j++;
     }
   }
-  console.log(j);
+  console.log(String(j));
 });
